@@ -1,7 +1,21 @@
+'''
+Members: Krishna Thakar, Anurag Bhattarai, Aryan Karki, Samikshya Adhikari
+Date: 04/16/2024
+
+Matchup 1 - Minimax (Offensive Heuristic 1) vs Alpha-beta (Offensive Heuristic 1) 
+Matchup 2 - Alpha-beta (Offensive Heuristic 2) vs Alpha-beta (Defensive Heuristic 1) 
+Matchup 3 - Alpha-beta (Defensive Heuristic 2) vs Alpha-beta (Offensive Heuristic 1) 
+Matchup 4 - Alpha-beta (Offensive Heuristic 2) vs Alpha-beta (Offensive Heuristic 1) 
+Matchup 5 - Alpha-beta (Defensive Heuristic 2) vs Alpha-beta (Defensive Heuristic 1) 
+Matchup 6 - Alpha-beta (Offensive Heuristic 2) vs Alpha-beta (Defensive Heuristic 2) 
 
 
+Offensive Heuristic 1: def offensive_function(self, turn): 2*(30-self.enemyscore(turn))+random.random()/10
+Defensive Heuristic 1: def defensive_function(self, turn): 2*self.myscore(turn)+random.random()/10
+Offensive Heuristic 2: def offensive_function_2(self, turn): 1 * self.myscore(turn) - 2 * self.enemyscore(turn)
+Defensive Heuristic 2: def defensive_function_2(self, turn): 2 * self.myscore(turn) - 2 * self.enemyscore(turn)
 
-####################################################################################
+'''
 
 import pygame
 # from pygame.locals import *
